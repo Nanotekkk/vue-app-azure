@@ -1,0 +1,56 @@
+// Import des variables Bootstrap
+@import 'variables';
+
+// Import de Bootstrap
+@import 'bootstrap/scss/bootstrap';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+// Styles globaux
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+section {
+  overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn {
+  font-weight: 500;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.btn-primary {
+  background-color: var(--bs-primary);
+}
+
+// Animation de sections
+[data-aos] {
+  opacity: 0;
+  transition-duration: 1s;
+  
+  &.aos-animate {
+    opacity: 1;
+  }
+}
